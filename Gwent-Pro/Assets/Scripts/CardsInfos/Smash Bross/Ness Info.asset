@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93ad2b27e194a7438d0b371ad0e9c56, type: 3}
+  m_Name: Ness Info
+  m_EditorClassIdentifier: 
+  name: Ness
+  typeCard: unit
+  type: hero
+  dropZone: 000000
+  power: 1
+  faction: smash bross
+  originPower: 3

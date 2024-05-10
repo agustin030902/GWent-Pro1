@@ -1,0 +1,1128 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.19f1 (244b723c30a6) revision 2378610'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'es' Physical Memory: 16086 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\2022.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/milaptop/Desktop/GWent-Pro1/Gwent-Pro
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+3622
+Successfully changed project path to: C:/Users/milaptop/Desktop/GWent-Pro1/Gwent-Pro
+C:/Users/milaptop/Desktop/GWent-Pro1/Gwent-Pro
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21648] Host "[IP] 0.0.0.0 [Port] 0 [Flags] 2 [Guid] 1351538229 [EditorId] 1351538229 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GR22R19) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [21648] Host "[IP] 0.0.0.0 [Port] 0 [Flags] 2 [Guid] 1351538229 [EditorId] 1351538229 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GR22R19) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 10.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.19f1 (244b723c30a6)
+[Subsystems] Discovering subsystems at path C:/Program Files/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/milaptop/Desktop/GWent-Pro1/Gwent-Pro/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     8043 MB
+    Driver:   31.0.101.3222
+Initialize mono
+Mono path[0] = 'C:/Program Files/2022.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56820
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006355 seconds.
+- Loaded All Assemblies, in  0.373 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.293 seconds
+Domain Reload Profiling: 666ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (159ms)
+		LoadAssemblies (100ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (157ms)
+			TypeCache.Refresh (156ms)
+				TypeCache.ScanAssembly (143ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (294ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (226ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (155ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.642 seconds
+Refreshing native plugins compatible for Editor in 4.50 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.652 seconds
+Domain Reload Profiling: 1291ms
+	BeginReloadAssembly (148ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (400ms)
+		LoadAssemblies (295ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (188ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (140ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (653ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (478ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (351ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4114 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (218.2 KB). Loaded Objects now: 4594.
+Memory consumption went from 165.3 MB to 165.1 MB.
+Total: 3.552700 ms (FindLiveObjects: 0.277300 ms CreateObjectMapping: 0.297500 ms MarkObjects: 2.764800 ms  DeleteObjects: 0.212300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1215148.590459 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Día lluvioso.png
+  artifactKey: Guid(6420ad07eb5b3cd4998e91ad187173d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Día lluvioso.png using Guid(6420ad07eb5b3cd4998e91ad187173d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00edf03a78c4c770e1bccb61d19bc22') in 0.133066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Master Ball.png
+  artifactKey: Guid(c4a6e0fdc0ae35541a38e594df1a4d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Master Ball.png using Guid(c4a6e0fdc0ae35541a38e594df1a4d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47899950c23df0e0f6b11a23da604efb') in 0.045039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Yoshi .png
+  artifactKey: Guid(cb89828ee66043f44869e35b28f22b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Yoshi .png using Guid(cb89828ee66043f44869e35b28f22b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dfb4d230e3c7340630e819fcab871c0') in 0.069335 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Bower.png
+  artifactKey: Guid(8249d71d7c20f294490cfaa94135bad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Bower.png using Guid(8249d71d7c20f294490cfaa94135bad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7aada1cdbff2b783d2356198d9fc2af') in 0.036454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Mudkid.png
+  artifactKey: Guid(17f1d4ca5fc09ca4cbf24483e3aef127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Mudkid.png using Guid(17f1d4ca5fc09ca4cbf24483e3aef127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84cae15d6eccfef34c36e167c9f47cf') in 0.042206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Ditto.png
+  artifactKey: Guid(20db55ec435e2a64b9f6621a86dd5ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Ditto.png using Guid(20db55ec435e2a64b9f6621a86dd5ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7240ee175899ed0864a14975c16dff5e') in 0.104247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Yveltal 2.png
+  artifactKey: Guid(1833f0b8780ffcc48b5db0e4ce8aee73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Yveltal 2.png using Guid(1833f0b8780ffcc48b5db0e4ce8aee73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530941cc7e65497162355605add76578') in 0.049401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Lucario.png
+  artifactKey: Guid(7ccf39a270279ea4a8f61053cb4caab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Lucario.png using Guid(7ccf39a270279ea4a8f61053cb4caab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403f1e4af6f51d285fca19c900737e0f') in 0.068752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Gastly.png
+  artifactKey: Guid(36f8d63584b8ad04085d49f052257985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Gastly.png using Guid(36f8d63584b8ad04085d49f052257985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b190c8b3523867be7ebbf4bf0a0e15') in 0.067559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Ataque X.png
+  artifactKey: Guid(7cfacde64a15e05469f6f51f13d9b2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Ataque X.png using Guid(7cfacde64a15e05469f6f51f13d9b2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811a66d288df5e86e80e3a0829b1f1b2') in 0.053129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Master Hand.png
+  artifactKey: Guid(b189ecb262e0328448aa2d4d2505aebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Master Hand.png using Guid(b189ecb262e0328448aa2d4d2505aebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a149f6d7192e0099a7d3b5287c199317') in 0.064636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites/Pokeballs.png
+  artifactKey: Guid(b9473bb832022ca43b5ad944423c81ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites/Pokeballs.png using Guid(b9473bb832022ca43b5ad944423c81ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e73271a613db8aff6d90c38cb4e3c48') in 0.136734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 25.690234 seconds.
+  path: Assets/Sprites/Gwent-Pro Sprites
+  artifactKey: Guid(b249c8c610b8e66429ea5bb7ce768239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Gwent-Pro Sprites using Guid(b249c8c610b8e66429ea5bb7ce768239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be9577cc7b2b3fdf9438f2de15017e8') in 0.000697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 60.607821 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking.prefab
+  artifactKey: Guid(d5f767cd04400b448ac371aa21fe5964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking.prefab using Guid(d5f767cd04400b448ac371aa21fe5964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c727c894eec2aca821da3910938eb8d4') in 0.014481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 22.993178 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 1.prefab
+  artifactKey: Guid(e9d6991b4bccab646a5771fe72159f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 1.prefab using Guid(e9d6991b4bccab646a5771fe72159f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edbf49c409f9dc13ba840fa6e3a14fee') in 0.002343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.535725 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 2.prefab
+  artifactKey: Guid(1553717fdfa66b34585130521e4194cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 2.prefab using Guid(1553717fdfa66b34585130521e4194cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bcae1efb4300c2f7d701cb13b39a30c') in 0.002299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 23.092342 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab
+  artifactKey: Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab using Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93acfbd5fbe87aa89014f7b970ad59f') in 0.002469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.633520 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 4.prefab
+  artifactKey: Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 4.prefab using Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e46fb772edfdef2478423e755d294c') in 0.002970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.510327 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 5.prefab
+  artifactKey: Guid(cd765719255811444bd8aa904442e94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 5.prefab using Guid(cd765719255811444bd8aa904442e94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bff1a4a59620d37f88f06ff57fabe95') in 0.003227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 23.971550 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ditto.prefab
+  artifactKey: Guid(cd765719255811444bd8aa904442e94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ditto.prefab using Guid(cd765719255811444bd8aa904442e94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7230d72e4a9a96c765ee92d7318c1090') in 0.002649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 16.772393 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Master Ball.prefab
+  artifactKey: Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Master Ball.prefab using Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740eca1989115f48492818a2e3308b06') in 0.002976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 10.139296 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab
+  artifactKey: Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab using Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab0906d732ec53658e9b080f72e19536') in 0.003136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 9.224386 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab
+  artifactKey: Guid(f62649f6c4fbe564ebfe550b1ab11d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab using Guid(f62649f6c4fbe564ebfe550b1ab11d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813484837a9281f5d2848689973b8a75') in 0.003081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 17.967842 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Brazal Recio.prefab
+  artifactKey: Guid(f62649f6c4fbe564ebfe550b1ab11d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Brazal Recio.prefab using Guid(f62649f6c4fbe564ebfe550b1ab11d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c343e42611938396a179082fa3e20a76') in 0.002840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.202136 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab
+  artifactKey: Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab using Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0eb902202e20246567b759472dd2611') in 0.002129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 9.537769 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Pokeballs.prefab
+  artifactKey: Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Pokeballs.prefab using Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b412f4910725b25c245bca1f7ba2163d') in 0.003171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.302286 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab
+  artifactKey: Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking 3.prefab using Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029044e7c2fc92db76be1e104a887f60') in 0.003023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 7.451421 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Arceus.prefab
+  artifactKey: Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Arceus.prefab using Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3d6b4e6b0402d66a736d86f9c410a4') in 0.002756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 13.572770 seconds.
+  path: Assets/Prefab/Cards/Slaking.prefab
+  artifactKey: Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Slaking.prefab using Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06399f067ab785c0ca27de1bb88c012') in 0.002974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 10.417496 seconds.
+  path: Assets/Prefab/Cards/Lucario.prefab
+  artifactKey: Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Lucario.prefab using Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3757493f237b135fc8e15101d92597b') in 0.002388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.560127 seconds.
+  path: Assets/Prefab/Cards/Slaking.prefab
+  artifactKey: Guid(e5217c1198978df46ac17411c8218657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Slaking.prefab using Guid(e5217c1198978df46ac17411c8218657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1787fe6f30de5d2f04287ffcbc933c') in 0.003043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 7.310126 seconds.
+  path: Assets/Prefab/Cards/Nevada.prefab
+  artifactKey: Guid(e5217c1198978df46ac17411c8218657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Nevada.prefab using Guid(e5217c1198978df46ac17411c8218657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c636f111d65c99e57097c6b4276f22') in 0.002657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.102426 seconds.
+  path: Assets/Prefab/Cards/Slaking.prefab
+  artifactKey: Guid(103909cf357139248a4d03fcb8ce153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Slaking.prefab using Guid(103909cf357139248a4d03fcb8ce153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a5e2e4015e1da7fc0bf0e7cc0977f4') in 0.003120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.593725 seconds.
+  path: Assets/Prefab/Cards/Dia despejado.prefab
+  artifactKey: Guid(103909cf357139248a4d03fcb8ce153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Dia despejado.prefab using Guid(103909cf357139248a4d03fcb8ce153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb54a7001549166917eb128a8b8284b') in 0.002714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 5.087746 seconds.
+  path: Assets/Prefab/Cards/Dia Despejado.prefab
+  artifactKey: Guid(103909cf357139248a4d03fcb8ce153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Dia Despejado.prefab using Guid(103909cf357139248a4d03fcb8ce153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36216eed58214b1ec13905eb7885e10d') in 0.002661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 26.761063 seconds.
+  path: Assets/Prefab/Cards/Pikachu 1.prefab
+  artifactKey: Guid(29960b4b2c96e944c9d6ba0bc776a8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pikachu 1.prefab using Guid(29960b4b2c96e944c9d6ba0bc776a8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402fda071afda3887eb63c03e648e2fc') in 0.005088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.721567 seconds.
+  path: Assets/Prefab/Cards/Pikachu 2.prefab
+  artifactKey: Guid(652a09b40b17c8144ad4f966f4fcd64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pikachu 2.prefab using Guid(652a09b40b17c8144ad4f966f4fcd64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f0cda1910bf0c2e81785cfcb05c121') in 0.003527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.655326 seconds.
+  path: Assets/Prefab/Cards/Pikachu 3.prefab
+  artifactKey: Guid(b12b8a11e4267d746a58c0d03254d954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pikachu 3.prefab using Guid(b12b8a11e4267d746a58c0d03254d954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b690a972bff3b4ac4a33883787a9a96') in 0.005783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.954525 seconds.
+  path: Assets/Prefab/Cards/Pikachu 4.prefab
+  artifactKey: Guid(833a73de2117eba40a1bb14523bb8e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pikachu 4.prefab using Guid(833a73de2117eba40a1bb14523bb8e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cbf1bc96ff97bf6245e711767c2de09') in 0.004943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 11.375672 seconds.
+  path: Assets/Prefab/Cards/Pikachu 5.prefab
+  artifactKey: Guid(abddd88e4d7647b4ca67b85de48f743a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pikachu 5.prefab using Guid(abddd88e4d7647b4ca67b85de48f743a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2250f42cb4211af0ac56550fcc71d2d4') in 0.002193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 15.048079 seconds.
+  path: Assets/Prefab/Cards/Pikachu
+  artifactKey: Guid(c457e2eebcfc1ff4dbbc3438c94dd8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pikachu using Guid(c457e2eebcfc1ff4dbbc3438c94dd8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a07efdf29f7f9be4c6de47774563463') in 0.000665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 68.378249 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Arceus.prefab
+  artifactKey: Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Arceus.prefab using Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2388fe7052d1d61825bc21bb3771e6d2') in 0.002620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 24.875687 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross
+  artifactKey: Guid(57d6f491650375944931593ab3086df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross using Guid(57d6f491650375944931593ab3086df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7766251d9105f48129752ca616c830') in 0.000575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 118.634627 seconds.
+  path: Assets/Scripts/CardsInfos/Pokemon Deck/Ditto Info 1.asset
+  artifactKey: Guid(d24d6fc65593a6d469308b5bb980c8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Pokemon Deck/Ditto Info 1.asset using Guid(d24d6fc65593a6d469308b5bb980c8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f98937d542971c7186c65b418139ba') in 0.001598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 23.527575 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Yoshi Info 3.asset
+  artifactKey: Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Yoshi Info 3.asset using Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83bb29ce77b363dc372cecca96d897f4') in 0.000962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.488650 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Captain Falcon Info 3.asset
+  artifactKey: Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Captain Falcon Info 3.asset using Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778f7093f18b7f21a8bf5f4896e39b1d') in 0.001106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 42.326104 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Captain Falcon Info 3.asset
+  artifactKey: Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Captain Falcon Info 3.asset using Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629aa1bb69420091e787f22da3782ffe') in 0.001826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001509 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Yoshi Info 3.asset
+  artifactKey: Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Yoshi Info 3.asset using Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c73ebeb1ed3832e682bb8f77cbc7e2') in 0.001116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.050039 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/bower Info.asset
+  artifactKey: Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/bower Info.asset using Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e715559dc5ede2df049a475839ab3c') in 0.001574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.254496 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Captain Falcon Info.asset
+  artifactKey: Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Captain Falcon Info.asset using Guid(e5feeee3d73b2bb4dab9c7c87228e466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82982046e902f2b506876769baec8dfe') in 0.001273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.437152 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Bower Info.asset
+  artifactKey: Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Bower Info.asset using Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096193d11dfa1e8ac452523d179be021') in 0.001131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 54.501816 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Bower Info.asset
+  artifactKey: Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Bower Info.asset using Guid(49b023e595adbfd46a74ea336443b24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10078da2ca1128f183f06c7f52c5e3ab') in 0.001174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.517908 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Link Info.asset
+  artifactKey: Guid(4c57056a1bad2e546aa343c532ab3038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Link Info.asset using Guid(4c57056a1bad2e546aa343c532ab3038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a04f17556ca07f83f2f0d346af672d') in 0.001232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 41.634843 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Link Info.asset
+  artifactKey: Guid(4c57056a1bad2e546aa343c532ab3038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Link Info.asset using Guid(4c57056a1bad2e546aa343c532ab3038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf92feac2b50b2e382321bfba344219') in 0.001269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.566624 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Link Info 2.asset
+  artifactKey: Guid(ac35eaaf60718d849baca04d22f8d83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Link Info 2.asset using Guid(ac35eaaf60718d849baca04d22f8d83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021a2cec82d55098d3309cc55b7bd727') in 0.000943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.653342 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Link Info 3.asset
+  artifactKey: Guid(765ba03e4d48529439769a0e73d355d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Link Info 3.asset using Guid(765ba03e4d48529439769a0e73d355d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a06e8073d1aa24a31bd70c5d4f6daa') in 0.000996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.344688 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Fox Info.asset
+  artifactKey: Guid(765ba03e4d48529439769a0e73d355d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Fox Info.asset using Guid(765ba03e4d48529439769a0e73d355d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3875976e12589a32768dc502863417c') in 0.001432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 26.889889 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Bola Smash Info 1.asset
+  artifactKey: Guid(ed271ab9f81b1c948a0ad471b5f5f5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Bola Smash Info 1.asset using Guid(ed271ab9f81b1c948a0ad471b5f5f5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6506e1ca97352cd42dc6417fa4535b9d') in 0.001404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 20.423500 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Golden Mushrrom Info.asset
+  artifactKey: Guid(ed271ab9f81b1c948a0ad471b5f5f5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Golden Mushrrom Info.asset using Guid(ed271ab9f81b1c948a0ad471b5f5f5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5cab47713b0e3c40369482c74f4bd3') in 0.001149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 26.294541 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Golden Mushrrom Info.asset
+  artifactKey: Guid(ed271ab9f81b1c948a0ad471b5f5f5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Golden Mushrrom Info.asset using Guid(ed271ab9f81b1c948a0ad471b5f5f5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d4c4d9cbf614e0b0a08aae44992e42') in 0.001267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.799496 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Ness Info.asset
+  artifactKey: Guid(ac864c3e1b3422f4297e5c2a183fcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Ness Info.asset using Guid(ac864c3e1b3422f4297e5c2a183fcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ad4120e55e9e800283e5a195a44fd9') in 0.001441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 15.460797 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Ness Info.asset
+  artifactKey: Guid(ac864c3e1b3422f4297e5c2a183fcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Ness Info.asset using Guid(ac864c3e1b3422f4297e5c2a183fcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830471c996202157ff439432728cd672') in 0.001115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.368683 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Ness Info 2.asset
+  artifactKey: Guid(905a422af81f91c4788ddb59cbe9e3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Ness Info 2.asset using Guid(905a422af81f91c4788ddb59cbe9e3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7698357be8cd11e6c285e6f3f261ce3a') in 0.001171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.943285 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Kirby info.asset
+  artifactKey: Guid(aa840aad78b2179429733e716beafe0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Kirby info.asset using Guid(aa840aad78b2179429733e716beafe0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e039b6102e93f68a4c528d800ac611ec') in 0.001054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 69.170326 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/Ness.prefab
+  artifactKey: Guid(87e3491a6a3e1b343b71f7c653e0a6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/Ness.prefab using Guid(87e3491a6a3e1b343b71f7c653e0a6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811225b84529ba544d5fc21737165bf1') in 0.004007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 5.003763 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/Ness 1.prefab
+  artifactKey: Guid(90954325795be46479a9c8ee5651f924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/Ness 1.prefab using Guid(90954325795be46479a9c8ee5651f924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb80c191e92efb957e38923e44f5c5e1') in 0.002999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 15.679554 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/Ness 2.prefab
+  artifactKey: Guid(97399127e5ef17c4d85e26243d1d5134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/Ness 2.prefab using Guid(97399127e5ef17c4d85e26243d1d5134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a808ec460e6f5ea11e8083992936781') in 0.002440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 20.071071 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Master Hand Info 1.asset
+  artifactKey: Guid(494fed9ddf6c7da4d9ca3858993ee738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Master Hand Info 1.asset using Guid(494fed9ddf6c7da4d9ca3858993ee738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51990408c42721efe36198146ed6589c') in 0.001269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 54.446422 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Bola Smash Info 1.asset
+  artifactKey: Guid(9ea83441f9e025b41b01302747ce43d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Bola Smash Info 1.asset using Guid(9ea83441f9e025b41b01302747ce43d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98caf370d4a56dc5b274bc0c8982d107') in 0.001349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 46.997226 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Arceus.prefab
+  artifactKey: Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Arceus.prefab using Guid(10fea45123fff8b44aeb9d1b2e002edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046a91cf46a841e4e98506080def188f') in 0.002422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 8.355323 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab
+  artifactKey: Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab using Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '833ff0e208fb0dbb3e0c00de2228b54c') in 0.002498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 33.160685 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab
+  artifactKey: Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab using Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '804cd853a4be98677f48f1d7afc9053b') in 0.003332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 3.110713 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab
+  artifactKey: Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab using Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29777c561a1413eb522f130cb4934df') in 0.003160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 10.850208 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab
+  artifactKey: Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab using Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323fc368cb54d596700e8015bffdcfd5') in 0.002734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.266112 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab
+  artifactKey: Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab using Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e04e6df94b41f27d16fcf23ac13ea4') in 0.002701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 7.685742 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab
+  artifactKey: Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Blastoise.prefab using Guid(85811d41d9a2fe7469525b7538bc430c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1041d0ae95f1f6dc3b8cd5161b6db7ee') in 0.003977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 13.224435 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Brazal Recio.prefab
+  artifactKey: Guid(f62649f6c4fbe564ebfe550b1ab11d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Brazal Recio.prefab using Guid(f62649f6c4fbe564ebfe550b1ab11d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18612475bbcac6315f1f398e4a3e4b3a') in 0.002550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 8.031689 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab
+  artifactKey: Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ataque X.prefab using Guid(5138ea5821f6da94caf343abc4ef0e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ad8e0e1d4ea301bafeb07f84d096d3') in 0.002550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 14.048880 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ditto.prefab
+  artifactKey: Guid(cd765719255811444bd8aa904442e94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ditto.prefab using Guid(cd765719255811444bd8aa904442e94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f5c13a2357db49fb864f578e07908a') in 0.002379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.573005 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ditto 1.prefab
+  artifactKey: Guid(b086a5f0207ecc243a251e7d153fc730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ditto 1.prefab using Guid(b086a5f0207ecc243a251e7d153fc730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ad222de9e73702a1aea69ca5ed7e8a') in 0.003168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.518150 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Ditto 1.prefab
+  artifactKey: Guid(b086a5f0207ecc243a251e7d153fc730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Ditto 1.prefab using Guid(b086a5f0207ecc243a251e7d153fc730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8864bce064274fe729bb5bf609918b77') in 0.002543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.833816 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab
+  artifactKey: Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab using Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7d292706d0fe5f6f457968c940e989') in 0.002409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 6.334806 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab
+  artifactKey: Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab using Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b56a8de1588a10a2b6b8dc0e2c7a70f') in 0.002629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 6.250696 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab
+  artifactKey: Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab using Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbdea0864756ed44e45c63bec386cbd') in 0.002473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 34.290430 seconds.
+  path: Assets/Scripts/Effects/Unit/NameCardEffect.cs
+  artifactKey: Guid(1d9bac470c1a0d048918bbd8d4620fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Effects/Unit/NameCardEffect.cs using Guid(1d9bac470c1a0d048918bbd8d4620fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517534840d3d9f6ca759c2fe33eb8488') in 0.001525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.909092 seconds.
+  path: Assets/Scripts/Effects/Unit/NameCard++.cs
+  artifactKey: Guid(ed5f78fb99bca954c8b921e823a593dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Effects/Unit/NameCard++.cs using Guid(ed5f78fb99bca954c8b921e823a593dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb7c5840482e4acf8902e8801ed8e47') in 0.000570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 44.336901 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab
+  artifactKey: Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab using Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d50951be82dbd0881201b5e3f3225b2') in 0.002730 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.434246 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab
+  artifactKey: Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab using Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6052b6a8f8197d014029b16fee94d45') in 0.002232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 8.295390 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab
+  artifactKey: Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly.prefab using Guid(ca3d38abf8193da40b6f568a3ab44d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7548448acfe14b2a4449573ac2dffed') in 0.003604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 14.439144 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab
+  artifactKey: Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab using Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da2cbae3d7fbf0e95f6d5583260e369') in 0.002206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.788422 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab
+  artifactKey: Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab using Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218cceee5c0d2318f4b215ba5267645e') in 0.002607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.130647 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab
+  artifactKey: Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 1.prefab using Guid(e9d760c8b6265d5469fb5023d7e630b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc39a1a8355706652132e48253a682ba') in 0.002655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.863718 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab
+  artifactKey: Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab using Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce689ebcc5a5784433aabd3be8a8c56') in 0.002771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.381895 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab
+  artifactKey: Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab using Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6e99d6076c5d846021cfc1b3cebff0') in 0.002725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 3.782333 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab
+  artifactKey: Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Gastly 2.prefab using Guid(cfbb5f7cc64fd7744ae9b66e632ec73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e53d46b56bdb6ff826d8d461fb6dad') in 0.003368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 24.714728 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Master Ball.prefab
+  artifactKey: Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Master Ball.prefab using Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340abe0f7dd9ddec4a9be7dbeadcb441') in 0.002757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 11.531383 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Pokeballs.prefab
+  artifactKey: Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Pokeballs.prefab using Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37794253d691654da9b7bf6dbc8e805a') in 0.002363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.068195 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Master Ball.prefab
+  artifactKey: Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Master Ball.prefab using Guid(3166aa2a9b3a4d14ea1780bdb89acfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1240b01c8bef51cab0d077e61efbd0e') in 0.002413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 10.026600 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Pokeballs.prefab
+  artifactKey: Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Pokeballs.prefab using Guid(e91479c23deea9d4d83b7348dc5c9591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b357acd25e487c8a18fb6d5b2e717bf') in 0.003018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 4.209912 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Slaking.prefab
+  artifactKey: Guid(d5f767cd04400b448ac371aa21fe5964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Slaking.prefab using Guid(d5f767cd04400b448ac371aa21fe5964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b888e6e52b2f3b7ade316b68e06379') in 0.003322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 10.222435 seconds.
+  path: Assets/Prefab/Cards/Pokemon Deck/Yveltal.prefab
+  artifactKey: Guid(a680c8c7bd7bbb54ebc4d4d4c3cd9478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Pokemon Deck/Yveltal.prefab using Guid(a680c8c7bd7bbb54ebc4d4d4c3cd9478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6fd27967597f2a251c9e8a739c6f8a') in 0.002827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 37.380677 seconds.
+  path: Assets/Prefab/Cards/Lucario.prefab
+  artifactKey: Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Lucario.prefab using Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2cb784cca3b7960f0da2cd0dcd15389') in 0.002363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 11.564958 seconds.
+  path: Assets/Prefab/Cards/Lucario.prefab
+  artifactKey: Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Lucario.prefab using Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c53ab3fa8ff0b72dca6a4e66d1d05e') in 0.002494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.404124 seconds.
+  path: Assets/Prefab/Cards/Lucario.prefab
+  artifactKey: Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Lucario.prefab using Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4101c61c1e6f8a1ccf1c9a9f821cfe93') in 0.002110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 5.285968 seconds.
+  path: Assets/Prefab/Cards/Lucario.prefab
+  artifactKey: Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Lucario.prefab using Guid(c66d8b80713b4ac4e9dcd14622a9e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d0706f98a2add39ddecbc7fe737abe') in 0.002244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 11.971603 seconds.
+  path: Assets/Scripts/CardsInfos/Unit Info.asset
+  artifactKey: Guid(420c696e5b1b8004a9bbc0e7dba4e12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Unit Info.asset using Guid(420c696e5b1b8004a9bbc0e7dba4e12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d9fcb98def573cf4c80dbfb1feacbb') in 0.001325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 45.484758 seconds.
+  path: Assets/Scripts/CardsInfos/Lucario Info.asset
+  artifactKey: Guid(420c696e5b1b8004a9bbc0e7dba4e12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Lucario Info.asset using Guid(420c696e5b1b8004a9bbc0e7dba4e12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83ce1ba7e8a7c3778bc8c0c6f5aa50a1') in 0.001296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.569674 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Lucario Info.asset
+  artifactKey: Guid(e9a23cfd666322747933f98d7a529e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Lucario Info.asset using Guid(e9a23cfd666322747933f98d7a529e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef201a600d35aae4ee442451535e56f8') in 0.001150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.705876 seconds.
+  path: Assets/Scripts/CardsInfos/Pokemon Deck/Lucario Info.asset
+  artifactKey: Guid(422f7b5c9ba963f4a8e2672a61563213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Pokemon Deck/Lucario Info.asset using Guid(422f7b5c9ba963f4a8e2672a61563213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5976448ed8e0155d6b31379b3c6104') in 0.001269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 39.749771 seconds.
+  path: Assets/Scripts/CardsInfos/Smash Bross/Lucario Info(Smash).asset
+  artifactKey: Guid(e9a23cfd666322747933f98d7a529e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Smash Bross/Lucario Info(Smash).asset using Guid(e9a23cfd666322747933f98d7a529e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1140e106e27ede71eafdc1c7d9552491') in 0.000972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 49.577915 seconds.
+  path: Assets/Scripts/CardsInfos/Pokemon Deck/Lucario Info(Pokemon).asset
+  artifactKey: Guid(422f7b5c9ba963f4a8e2672a61563213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CardsInfos/Pokemon Deck/Lucario Info(Pokemon).asset using Guid(422f7b5c9ba963f4a8e2672a61563213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45db028f17c495620e60abacfce6a3fd') in 0.001265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 352.144143 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/D.K..prefab
+  artifactKey: Guid(47c230d143cc63247a1efa02c5521037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/D.K..prefab using Guid(47c230d143cc63247a1efa02c5521037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b80d35174e9ddc4645df9a76ada4b9') in 0.003411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.842335 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/D.K. 1.prefab
+  artifactKey: Guid(78cb1c00962cd4b49ba3599a53da0df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/D.K. 1.prefab using Guid(78cb1c00962cd4b49ba3599a53da0df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4f7790645c5f59b73dcca1d603c9ac') in 0.002635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 5.305207 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/D.K. 2.prefab
+  artifactKey: Guid(3df61125c43381e42b3e3a8438919915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/D.K. 2.prefab using Guid(3df61125c43381e42b3e3a8438919915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c90e5a413338cfe8b31c8357055ca9') in 0.002611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 13.210665 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/Lucario.prefab
+  artifactKey: Guid(16335fc5f2e3b714fb90897591cedd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/Lucario.prefab using Guid(16335fc5f2e3b714fb90897591cedd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9418b4cdd7b1227ee14bfe5d8072f1da') in 0.002332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 12.734162 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/Yoshi.prefab
+  artifactKey: Guid(85ab8ed1efd2bc04786e3e6f13a6ad73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/Yoshi.prefab using Guid(85ab8ed1efd2bc04786e3e6f13a6ad73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7dd915b675bbb44af741923099023ce') in 0.003612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.379709 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/Yoshi 1.prefab
+  artifactKey: Guid(acdc3a5a5cff83e4b8763d2b322eb1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/Yoshi 1.prefab using Guid(acdc3a5a5cff83e4b8763d2b322eb1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14fa0c309b3da61b1dcfa81a9a65b33') in 0.002226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 8.959492 seconds.
+  path: Assets/Prefab/Cards/Smash Bross Deck/Yoshi 2.prefab
+  artifactKey: Guid(a9800403b0999124bb027bf4cefe65c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cards/Smash Bross Deck/Yoshi 2.prefab using Guid(a9800403b0999124bb027bf4cefe65c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e240945d273547ef64c886f3ac53da') in 0.002234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
