@@ -16,7 +16,7 @@ public class FinalizateRound : MonoBehaviour
     private GameObject leaderCard;
     private CardController cardController;
     private CardDataLeader leaderCardData;
-    private void Start()
+    private void OnEnable()
     {
         board = GameObject.Find("Board");
         table = GameObject.Find("Table");
