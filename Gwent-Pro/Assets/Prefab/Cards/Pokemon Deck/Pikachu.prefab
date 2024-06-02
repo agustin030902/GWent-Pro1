@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78633c77219d00443bd8c5440b6025f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoCard: {fileID: 11400000, guid: 59ffba3167c847e41a3c60d72cb7de65, type: 2}
+  infoCard: {fileID: 11400000, guid: 26439d22e7f890c48ac974392e7369a0, type: 2}
 --- !u!114 &-649309144318527969
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,8 +6,8 @@ public class DestroyCardMorePower : MonoBehaviour
 {
     private GameObject subBoard1;
     private GameObject subBoard2;
-    private GameObject cemetery1;
-    private GameObject cemetery2;
+    //private GameObject cemetery1;
+    //private GameObject cemetery2;
     private GameObject card1;
     private GameObject card2;
     private CardController cardController1;
@@ -16,15 +16,12 @@ public class DestroyCardMorePower : MonoBehaviour
     private void OnEnable()
     {
         GameObject cardResult = null;
-        GameObject cemeteryResult = null;
         table = GameObject.Find("Table");
 
 
         subBoard1 = GameObject.Find("SubBoardPlayer1");
         subBoard2 = GameObject.Find("SubBoardPlayer2");
 
-        cemetery1 = subBoard1.transform.GetChild(7).gameObject;
-        cemetery2 = subBoard1.transform.GetChild(7).gameObject;
 
         card1 = CardMorePower(subBoard1);
         card2 = CardMorePower(subBoard2);
@@ -40,38 +37,33 @@ public class DestroyCardMorePower : MonoBehaviour
             if (unit1.Power > unit2.Power)
             {
                 cardResult = card1;
-                cemeteryResult = cemetery1;
             }
             else if (unit1.Power < unit2.Power)
             {
                 cardResult = card2;
-                cemeteryResult = cemetery2;
             }
             else
             {
                 if (table.transform.rotation.z == 1)
                 {
                     cardResult = card2;
-                    cemeteryResult = cemetery2;
                 }
-                else { cardResult = card1; cemeteryResult = cemetery1; }
+                else { cardResult = card1; }
             }
         }
         else if (card1.name == "vacio" && card2.name != "vacio")
         {
-            cardResult = card2;
-            cemeteryResult = cemetery2;
+            cardResult = card2; 
         }
         else if (card2.name == "vacio" && card1.name != "vacio")
         {
             cardResult = card1;
-            cemeteryResult = cemetery1;
         }
 
         GameObject card3 = cardResult;
 
         Destroy(cardResult);
-        Instantiate(cardResult,new Vector2(0,0),Quaternion.identity,cemeteryResult.transform);
+        //Instantiate(cardResult,new Vector2(0,0),Quaternion.identity,cemeteryResult.transform);
     }
     private GameObject CardMorePower(GameObject subBoard)
     {

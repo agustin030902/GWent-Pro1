@@ -16,6 +16,7 @@ MonoBehaviour:
   typeCard: Unit
   type: plata
   dropZone: 010000
-  power: 2
+  power: 0
   faction: Pokemon
   originPower: 2
+  climateModificatePower: 0

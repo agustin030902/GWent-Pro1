@@ -91,23 +91,33 @@ public class InvokeButton : MonoBehaviour
             if(climateZone.transform.childCount < 4) 
             {
                 card.transform.SetParent(climateZone.transform, false);
-                dataClimate.IsActivateClimate = true;
                 card.SetActive(true);
             }
         }
         else if(cardController.infoCard is CardDataLure)
         {
-            card.gameObject.transform.SetParent(lurePanel.transform, false);
-            card.gameObject.SetActive(false);
+            card.transform.SetParent(lurePanel.transform, false);
+            card.SetActive(false);
             imageLurePanel.enabled = true;
             for(int i = 0; i < lurePanel.transform.childCount; i++)
             {
                 lurePanel.transform.GetChild(i).gameObject.SetActive(true);
             }
-           
         }
-
+        else if (cardController.infoCard is CardDataClearance)
+        {
+            CardDataClearance dataClearance = (CardDataClearance)cardController.infoCard;
+            GameObject climateZone = GameObject.Find("ClimateZone");
+            while (climateZone.transform.childCount != 0)
+            {
+                Debug.Log(climateZone.transform.childCount);
+                Destroy(climateZone.transform.GetChild(0).gameObject);
+            }
+            Destroy(card);
+        }
         gameController.IsSummondCardInTurn = false;
+
+        //desactivar panel de InfoHand
         for (int i = 0; i < panelInfoCardHand.transform.childCount; i++)
         {
             panelInfoCardHand.transform.GetChild(i).gameObject.SetActive(false);

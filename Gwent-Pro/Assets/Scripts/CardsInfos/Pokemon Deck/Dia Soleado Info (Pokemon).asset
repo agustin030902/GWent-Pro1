@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Dia soleado
   typeCard: climate
   afectationZone: 010000
-  afectation: -2
+  afectation: -1

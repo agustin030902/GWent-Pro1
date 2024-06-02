@@ -34,7 +34,7 @@ public class RangeZone : MonoBehaviour
             card = zone.transform.GetChild(i).gameObject;
             cardController = card.GetComponent<CardController>();
             CardDataUnit unit = (CardDataUnit)cardController.infoCard;
-            unit.Power++;
+            unit.Power ++;
         }
 
     }

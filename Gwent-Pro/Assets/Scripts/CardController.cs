@@ -11,19 +11,17 @@ public class CardController : MonoBehaviour
     private Image imagePanelField;
     private Image imageCardInPanel;
     private Image imageCard;
-    private Sprite spriteCard;
-    private GameObject buttonInvoke;
-    private GameObject imageChildPanel;
+    //private Sprite spriteCard;
+    //private GameObject buttonInvoke;
+    //private GameObject imageChildPanel;
     private GameObject handPlayer;
     private GameObject changeZone;
     private GameObject increaseZone;
     private GameObject increaseCard;
     private CardDataIncrease cardDataIncrease;
     private bool isIncreasePower = false;
-    private int climateModificatePower = 0;
     private bool isSaveLeader = false;
     public bool IsIncreasePower { get => isIncreasePower; set => isIncreasePower = value; }
-    public int ClimateModificatePower { get => climateModificatePower; set => climateModificatePower = value; }
     public bool IsSaveLeader { get => isSaveLeader; set => isSaveLeader = value; }
 
     private void Awake()
@@ -36,29 +34,21 @@ public class CardController : MonoBehaviour
         }
         panelInfoCardHand = GameObject.Find("InfoCardHand");
         panelInfoCardField = GameObject.Find("InfoCardField");
-        buttonInvoke = panelInfoCardHand.transform.GetChild(1).gameObject;
+        //buttonInvoke = panelInfoCardHand.transform.GetChild(1).gameObject;
         imagePanelHand = panelInfoCardHand.GetComponent<Image>();
         imagePanelField = panelInfoCardField.GetComponent<Image>();
         imageCardInPanel = panelInfoCardField.transform.GetChild(1).gameObject.GetComponent<Image>();
         imageCard = GetComponent<Image>();
     }
-    private void OnMouseEnter()
-    {
-        print("hice Click");
-    }
     private void Update()
     {
-
-        
-
-
-        if (infoCard is CardDataUnit unit)
+        //Efecto permanente de las cartas Aumento y Clima
+        if (infoCard is CardDataUnit unit && transform.parent.parent.parent.name == "Board" && transform.parent.name != "DeckZone")
         {
             if(transform.parent.parent.name == "TwoCardsReturnPanel")
             {
                 transform.rotation = Quaternion.Euler(0, 0, transform.rotation.z);
             }
-
             if (transform.parent.name == "MeleeZone")
             {
                 CardDataUnit cardDataUnit = unit;
@@ -107,24 +97,28 @@ public class CardController : MonoBehaviour
                     }
                 }
             }
-        }
 
-        // Efecto Permanente de las cartas Clima
-        if(infoCard is CardDataClimate)
-        {
-            CardDataClimate climate = (CardDataClimate)infoCard;
             GameObject climateZone = GameObject.Find("ClimateZone");
-            //print((climateZone.transform.childCount));
-            if (climate.IsActivateClimate)
+            for(int i =0;i< climateZone.transform.childCount;i++)
             {
-                for (int i = 0; i <= 2 && climate.AfectationZone[i]; i++)
+                GameObject climateCard = climateZone.transform.GetChild(i).gameObject;
+                CardController controller = climateCard.GetComponent<CardController>();
+                CardDataClimate climate = (CardDataClimate)controller.infoCard;
+                controller = GetComponent<CardController>();
+                CardDataUnit dataUnit = (CardDataUnit)controller.infoCard;
+                for (int j=0;j<3;j++)
                 {
-                    climate.AfectionPowerCard(climateZone.transform.childCount,i+1);
+                    //print((dataUnit.DropZone[j] == climate.AfectationZone[j] && dataUnit.DropZone[j] == true) + " "+j);
+                    if ((dataUnit.DropZone[j] == climate.AfectationZone[j] && dataUnit.DropZone[j] == true) && dataUnit.Type != "hero" && !dataUnit.ClimateModificatePower)
+                    {
+                        dataUnit.ClimateModificatePower = true;
+                        dataUnit.Power += climate.Afectation;
+                    }
                 }
             }
+
         }
-
-
+        
     }
     public void SummonCard()
     {

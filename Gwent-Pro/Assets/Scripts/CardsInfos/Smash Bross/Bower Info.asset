@@ -16,6 +16,6 @@ MonoBehaviour:
   typeCard: unit
   type: hero
   dropZone: 010000
-  power: 1
+  power: 5
   faction: smash bross
   originPower: 5

@@ -248,8 +248,11 @@ public class GameController : MonoBehaviour
             {
                 GameObject card = player.SubBoard.transform.GetChild(j).GetChild(i).gameObject;
                 cardController = card.GetComponent<CardController>();
-                CardDataUnit unit = (CardDataUnit)cardController.infoCard;
-                sum += unit.Power;
+                if(cardController.infoCard is CardDataUnit)
+                {
+                    CardDataUnit unit = (CardDataUnit)cardController.infoCard;
+                    sum += unit.Power;
+                }
             }
         }
         return sum;
@@ -289,6 +292,10 @@ public class GameController : MonoBehaviour
                     {
                         effectCard.enabled = false;
                     }
+                }
+                else if(cardController.IsSaveLeader)
+                {
+                    cardController.IsSaveLeader = false;
                 }
             }
         }
