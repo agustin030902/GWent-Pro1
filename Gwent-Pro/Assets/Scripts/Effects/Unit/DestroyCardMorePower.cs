@@ -6,8 +6,6 @@ public class DestroyCardMorePower : MonoBehaviour
 {
     private GameObject subBoard1;
     private GameObject subBoard2;
-    //private GameObject cemetery1;
-    //private GameObject cemetery2;
     private GameObject card1;
     private GameObject card2;
     private CardController cardController1;
@@ -51,11 +49,11 @@ public class DestroyCardMorePower : MonoBehaviour
                 else { cardResult = card1; }
             }
         }
-        else if (card1.name == "vacio" && card2.name != "vacio")
+        else if (card1==null && card2 != null)
         {
             cardResult = card2; 
         }
-        else if (card2.name == "vacio" && card1.name != "vacio")
+        else if (card2.name == "vacio" && card1 != null)
         {
             cardResult = card1;
         }
@@ -69,7 +67,7 @@ public class DestroyCardMorePower : MonoBehaviour
     {
         GameObject card;
         CardController cardController;
-        GameObject cardResult = new GameObject("vacio");
+        GameObject cardResult = null;
 
         int temp = int.MinValue;
         for (int i = 1; i <= 3; i++)

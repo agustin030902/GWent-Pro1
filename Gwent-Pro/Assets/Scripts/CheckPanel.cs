@@ -10,6 +10,7 @@ public class CheckPanel : MonoBehaviour
     private int indexVictoryPlayer2;
     private GameObject board;
     private GameObject panelFather;
+    private GameObject mainCanvas;
     //private TMP_Text textPanel;
     private GameController gameController;
     private GameObject victoryPanel;
@@ -19,6 +20,7 @@ public class CheckPanel : MonoBehaviour
     private void OnEnable()
     {
         board = GameObject.Find("Board");
+        mainCanvas = GameObject.Find("MainCanvas");
         panelFather = transform.parent.gameObject;
         GameObject gameObjectTextChild = panelFather.transform.GetChild(0).gameObject;
         //textPanel = gameObjectTextChild.GetComponent<TMP_Text>();
@@ -43,10 +45,9 @@ public class CheckPanel : MonoBehaviour
                 indexVictoryPlayer2++;
             }
         }
-        print(indexVictoryPlayer1);
-        print(indexVictoryPlayer2);
         CheckWin();
         
+
     }
 
     public void Acepted()
@@ -103,6 +104,18 @@ public class CheckPanel : MonoBehaviour
         for (int i = 0; i < victoryPanel.transform.childCount; i++)
         {
             victoryPanel.transform.GetChild(i).gameObject.SetActive(true);
+        }
+
+        for(int i = 0;i<mainCanvas.transform.childCount;i++)
+        {
+            if (mainCanvas.transform.GetChild(i).name != "VictoryPanel")
+            {
+                //mainCanvas.transform.GetChild(i).gameObject.SetActive(false);
+                Destroy(mainCanvas.transform.GetChild(i).gameObject);
+
+                //Image image = mainCanvas.transform.GetChild(i).GetComponent<Image>();
+                //image.enabled = false;
+            }
         }
     }
 

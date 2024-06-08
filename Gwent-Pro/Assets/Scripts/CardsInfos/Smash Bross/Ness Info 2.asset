@@ -15,8 +15,7 @@ MonoBehaviour:
   name: Ness
   typeCard: unit
   type: plate
-  dropZone: 000000
+  dropZone: 000001
   power: 3
   faction: smash bross
   originPower: 3
-  climateModificatePower: 0

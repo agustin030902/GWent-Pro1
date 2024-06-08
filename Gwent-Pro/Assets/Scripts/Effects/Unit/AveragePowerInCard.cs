@@ -32,10 +32,10 @@ public class AveragePowerInCard : MonoBehaviour
         int average = maxPower / totalCard;
 
 
-        card = transform.parent.gameObject;
+        card = gameObject;
         cardController = card.GetComponent<CardController>();
-        cardDataUnit = (CardDataUnit)cardController.infoCard; cardDataUnit.Power = average;
-
+        cardDataUnit = (CardDataUnit)cardController.infoCard;
+        cardDataUnit.Power = average;
 
     }
 

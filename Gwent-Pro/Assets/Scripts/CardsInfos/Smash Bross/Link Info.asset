@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93ad2b27e194a7438d0b371ad0e9c56, type: 3}
   m_Name: Link Info
   m_EditorClassIdentifier: 
-  name: Yoshi
+  name: Link
   typeCard: unit
   type: plate
   dropZone: 010000

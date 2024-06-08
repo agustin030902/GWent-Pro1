@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class ClimateInvoke : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    GameObject playerHand;
+    GameObject table;
+    CardController cardController;
+    GameObject climateZone;
+    GameObject card;
+    private void OnEnable()
     {
-        
+        climateZone = GameObject.Find("ClimateZone");
+        table = GameObject.Find("Table");
+        playerHand = (table.transform.rotation.z == 0)? GameObject.Find("Player1 Hand") : GameObject.Find("Player2 Hand");
+      
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        for (int j = 0; j < playerHand.transform.childCount; j++)
+        {
+            card = playerHand.transform.GetChild(j).gameObject;
+            cardController = card.GetComponent<CardController>();
+            {
+                card.transform.SetParent(climateZone.transform, false);
+                break;
+            }
+        }
     }
 }

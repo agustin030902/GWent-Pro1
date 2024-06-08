@@ -33,9 +33,10 @@ public class PassRound : MonoBehaviour
     public void OnClick()
     {
         leader = (table.transform.rotation.z == 0) ? GameObject.Find("SubBoardPlayer1").transform.GetChild(8).GetChild(0).gameObject : GameObject.Find("SubBoardPlayer2").transform.GetChild(8).GetChild(0).gameObject;
-        print(leader.name);
+        //print(leader.name);
         CardController controller = leader.GetComponent<CardController>();  
         dataLeader = (CardDataLeader)controller.infoCard;
+        //print(dataLeader.IsActivateEffects);
         if (!dataLeader.IsActivateEffects)
         {
             for (int i = 0; i < effectLeaderPanel.transform.childCount; i++)

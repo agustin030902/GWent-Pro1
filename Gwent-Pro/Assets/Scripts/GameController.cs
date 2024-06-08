@@ -19,7 +19,8 @@ public class GameController : MonoBehaviour
     private GameObject textPanel;
     private GameObject leaderCardPlayer1;
     private GameObject leaderCardPlayer2;
-
+    private AudioSource audioSourcePlayer1;
+    private AudioSource audioSourcePlayer2;
 
     private CardController cardController;
     private Player player1;
@@ -69,8 +70,20 @@ public class GameController : MonoBehaviour
         GameObject player1Hand = Instantiate(HandPlayer,table.transform);
         player1Hand.name = "Player1 Hand";
         leaderCardPlayer1 = Instantiate(leaderPlayer1,subBoardPlayer1.transform.GetChild(8),true);
-        leaderCardPlayer2 =  Instantiate(leaderPlayer2,subBoardPlayer2.transform.GetChild(8),!true);
+        leaderCardPlayer2 =  Instantiate(leaderPlayer2,subBoardPlayer2.transform.GetChild(8),false);
 
+        //Desperfectos de Unity
+        CardController cardController = leaderPlayer1.GetComponent<CardController>();
+        CardDataLeader cardDataLeader = (CardDataLeader)cardController.infoCard;  
+        cardDataLeader.IsActivateEffects = false;
+        cardController = leaderPlayer2.GetComponent<CardController>();
+        cardDataLeader = (CardDataLeader)cardController.infoCard;
+        cardDataLeader.IsActivateEffects = false;
+
+
+        AudioSource[] audioSources = GetComponents<AudioSource>(); 
+        audioSourcePlayer1 = audioSources[0];   
+        audioSourcePlayer2 = audioSources[1];
 
         Player1 = new(subBoardPlayer1,Deck1,player1Hand);
         Player2 = new(subBoardPlayer2,Deck2,player2Hand);
@@ -153,7 +166,14 @@ public class GameController : MonoBehaviour
                 }
                 InitializePlayer21 = false;
             }
-            
+            audioSourcePlayer2.enabled = true;
+            audioSourcePlayer1.enabled = false;
+
+            if (Input.GetKey(KeyCode.None))
+            {
+                audioSourcePlayer2.Play();
+            }
+
         }
         if (table.transform.rotation.z == 0 ) // turno de player1
         {
@@ -167,7 +187,19 @@ public class GameController : MonoBehaviour
                 }
                 initializePlayer1 = false;  
             }
+            audioSourcePlayer1.enabled = true;
+            audioSourcePlayer2.enabled = false;
+            if (Input.GetKey(KeyCode.None))
+            {
+                audioSourcePlayer1.Play();
+            }
         }
+
+        if(table.transform.rotation.x == 1 )
+        {
+            table.transform.rotation = Quaternion.Euler(0,0,0);
+        }
+
     }
 
     private void ActivateMethodDrawInitial1()
@@ -282,16 +314,16 @@ public class GameController : MonoBehaviour
                 cardController = card.GetComponent<CardController>();
                 if(!cardController.IsSaveLeader)
                 {
-                    MonoBehaviour effectCard = card.GetComponent<MonoBehaviour>();
-                    GameObject cardInCemetery = Instantiate(card, new Vector2(0, 0), Quaternion.identity);
-                    cardInCemetery.transform.SetParent(player.SubBoard.transform.GetChild(7), false);
+                    //MonoBehaviour effectCard = card.GetComponent<MonoBehaviour>();
+                    //GameObject cardInCemetery = Instantiate(card, new Vector2(0, 0), Quaternion.identity);
+                    //cardInCemetery.transform.SetParent(player.SubBoard.transform.GetChild(7), false);
                     Destroy(card);
-                    cardController = cardInCemetery.GetComponent<CardController>();
-                    cardController.enabled = false;
-                    if (effectCard is not Image)
-                    {
-                        effectCard.enabled = false;
-                    }
+                    //cardController = cardInCemetery.GetComponent<CardController>();
+                    //cardController.enabled = false;
+                    //if (effectCard is not Image)
+                    //{
+                    //    effectCard.enabled = false;
+                    //}
                 }
                 else if(cardController.IsSaveLeader)
                 {

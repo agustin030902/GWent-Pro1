@@ -11,9 +11,6 @@ public class CardController : MonoBehaviour
     private Image imagePanelField;
     private Image imageCardInPanel;
     private Image imageCard;
-    //private Sprite spriteCard;
-    //private GameObject buttonInvoke;
-    //private GameObject imageChildPanel;
     private GameObject handPlayer;
     private GameObject changeZone;
     private GameObject increaseZone;
@@ -151,8 +148,9 @@ public class CardController : MonoBehaviour
                 effect.enabled = false;
             }
             GameObject cloneCard = Instantiate(gameObject, panelInfoCardField.transform);
+            Image image = cloneCard.GetComponent<Image>();
             cloneCard.SetActive(false);
-            
+            image.enabled = false;
 
             for (int i = 0; i < panelInfoCardField.transform.childCount; i++)
             {

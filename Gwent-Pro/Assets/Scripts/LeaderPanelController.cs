@@ -40,8 +40,8 @@ public class LeaderPanelController : MonoBehaviour
             }
         }
         int random = Random.Range(0,list.Count-1);
-        print(random.ToString());
-        cardDataLeader.IsActivateEffects = true;
+        //print(random.ToString());
+        //cardDataLeader.IsActivateEffects = true;
         if (gameObject.name == "YesButton")
         {
             CardController cardController = list[random].GetComponent<CardController>();

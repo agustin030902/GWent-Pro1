@@ -21,7 +21,7 @@ public class DestroyCardMinusPowerOponent : MonoBehaviour
             subBoard = GameObject.Find("SubBoardPlayer2");
         }
         card = CardMinusPower(subBoard);
-        print(card.name);
+        print(card);
         Destroy(card);
     }
     private GameObject CardMinusPower(GameObject subBoard)

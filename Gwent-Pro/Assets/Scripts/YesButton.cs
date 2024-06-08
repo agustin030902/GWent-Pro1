@@ -18,7 +18,7 @@ public class YesButton : MonoBehaviour
     private GameObject board;
     private GameController gameController;
     public TMP_Text text;
-    private void Start()
+    private void OnEnable()
     {
         table = GameObject.Find("Table");
         panel = transform.parent.gameObject;
@@ -44,8 +44,10 @@ public class YesButton : MonoBehaviour
         if (transform.name == "YesButton")
         {
             leaderCardData.Effect(subBoard);
+            leaderCardData.IsActivateEffects = true;
+            print(leaderCardData.Name + " tiene " + leaderCardData.IsActivateEffects);
         }
-
+        
          ActivateFinishPanel();
          Image image = panel.GetComponent<Image>();
          for (int i = 0; i < panel.transform.childCount; i++)
