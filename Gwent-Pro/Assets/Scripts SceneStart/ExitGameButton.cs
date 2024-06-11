@@ -5,6 +5,6 @@ public class ExitGameButton : MonoBehaviour
 {
     public void OnMouseDown()
     {
-        Application.Quit(1);
+        Application.Quit();
     }
 }

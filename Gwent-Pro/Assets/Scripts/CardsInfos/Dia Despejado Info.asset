@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c27a325f15c97a40a7329fdeafb94e7, type: 3}
   m_Name: Dia Despejado Info
   m_EditorClassIdentifier: 
+  name: Dia Despejado
+  typeCard: 

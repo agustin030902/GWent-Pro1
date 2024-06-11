@@ -108,10 +108,11 @@ public class InvokeButton : MonoBehaviour
         {
             CardDataClearance dataClearance = (CardDataClearance)cardController.infoCard;
             GameObject climateZone = GameObject.Find("ClimateZone");
-            while (climateZone.transform.childCount != 0)
+            for(int i = 0;i< climateZone.transform.childCount;i++)
             {
-                Debug.Log(climateZone.transform.childCount);
-                Destroy(climateZone.transform.GetChild(0).gameObject);
+                GameObject climateCard = climateZone.transform.GetChild(i).gameObject;
+                climateCard.SetActive(false);
+                Destroy(climateCard);
             }
             Destroy(card);
         }

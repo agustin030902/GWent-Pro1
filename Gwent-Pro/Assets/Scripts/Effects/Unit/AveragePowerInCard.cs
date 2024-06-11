@@ -21,9 +21,12 @@ public class AveragePowerInCard : MonoBehaviour
                 {
                     card = board.transform.GetChild(i).GetChild(j).GetChild(k).gameObject;
                     cardController = card.GetComponent<CardController>();
-                    cardDataUnit = (CardDataUnit)cardController.infoCard;
-                    maxPower += cardDataUnit.Power;
-                    totalCard++;
+                    if (cardController.infoCard is CardDataUnit)
+                    {
+                        cardDataUnit = (CardDataUnit)cardController.infoCard;
+                        maxPower += cardDataUnit.Power;
+                        totalCard++;
+                    }
                 }
 
             }

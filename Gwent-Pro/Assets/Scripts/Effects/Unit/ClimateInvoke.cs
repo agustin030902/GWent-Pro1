@@ -22,6 +22,7 @@ public class ClimateInvoke : MonoBehaviour
         {
             card = playerHand.transform.GetChild(j).gameObject;
             cardController = card.GetComponent<CardController>();
+            if (cardController.infoCard is CardDataClimate)
             {
                 card.transform.SetParent(climateZone.transform, false);
                 break;
