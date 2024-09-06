@@ -125,6 +125,7 @@ public class InvokeButton : MonoBehaviour
         }
         imagePanelCard = panelInfoCardHand.GetComponent<Image>();
         imagePanelCard.enabled = false;
+        //print(cardEffect.name);
         cardEffect.enabled = true;
     }
 

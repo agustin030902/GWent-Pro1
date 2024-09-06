@@ -46,6 +46,6 @@ public class BackButton : MonoBehaviour
         {
             panel.transform.GetChild(i).gameObject.SetActive(false);
         }
-
     }
+
 }

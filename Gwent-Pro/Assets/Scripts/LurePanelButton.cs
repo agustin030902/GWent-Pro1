@@ -36,40 +36,71 @@ public class LurePanelButton : MonoBehaviour
 
         for (int i = 1; i < 4; i++)
         {
-            for(int j = 0;j < subBoard.transform.GetChild(i).childCount ;j++)
+            print("la posicion " + i + " tiene " + subBoard.transform.GetChild(i).childCount);
+            //for(int j = 0;j < subBoard.transform.GetChild(i).childCount ;j++)
+            //{
+            //    CardController controller;
+            //    cardField = subBoard.transform.GetChild(i).GetChild(0).gameObject;
+            //    print(cardField.name);
+            //    controller = cardField.GetComponent<CardController>();
+
+            //    if(controller.infoCard is CardDataUnit)
+            //    {
+            //        cardField.transform.SetParent(selectionZone.transform, true);
+            //    }
+            //}
+            while(subBoard.transform.GetChild(i).childCount > 0)
             {
-                cardField = subBoard.transform.GetChild(i).GetChild(j).gameObject;
-                cardField.transform.SetParent(selectionZone.transform,false);
+                CardController controller;
+                cardField = subBoard.transform.GetChild(i).GetChild(0).gameObject;
+                print(cardField.name);
+                controller = cardField.GetComponent<CardController>();
+
+                if (controller.infoCard is CardDataUnit)
+                {
+                    cardField.transform.SetParent(selectionZone.transform, true);
+                }
             }
+
         }
         
     }
     public void OnMouseDown()
     {
-        bool[] zoneInvocation= new bool[3];
-        GameObject cardSustitution = sustitutionZone.transform.GetChild(0).gameObject;
-        if (sustitutionZone.transform.GetChild(0).gameObject.GetComponent<MonoBehaviour>() is not Image)
+        if (sustitutionZone.transform.childCount == 0)
         {
-            sustitutionZone.transform.GetChild(0).gameObject.GetComponent<MonoBehaviour>().enabled = false;
+            lureCard.transform.SetParent(playerHand.transform, false);
+            lureCard.SetActive(true);
         }
-        CardController cardController = cardSustitution.GetComponent<CardController>();
-        CardDataUnit cardData = (CardDataUnit)cardController.infoCard;
-        zoneInvocation = cardData.DropZone;
-        sustitutionZone.transform.GetChild(0).SetParent(playerHand.transform,false);
-        if (zoneInvocation[0])
+        else
         {
-            lureCard.transform.SetParent(subBoard.transform.GetChild(1), false);
+            bool[] zoneInvocation = new bool[3];
+            GameObject cardSustitution = sustitutionZone.transform.GetChild(0).gameObject;
+            if (sustitutionZone.transform.GetChild(0).gameObject.GetComponent<MonoBehaviour>() is not Image)
+            {
+                sustitutionZone.transform.GetChild(0).gameObject.GetComponent<MonoBehaviour>().enabled = false;
+            }
+            CardController cardController = cardSustitution.GetComponent<CardController>();
+            CardDataUnit cardData = (CardDataUnit)cardController.infoCard;
+            zoneInvocation = cardData.DropZone;
+            sustitutionZone.transform.GetChild(0).SetParent(playerHand.transform, false);
+            if (zoneInvocation[0])
+            {
+                lureCard.transform.SetParent(subBoard.transform.GetChild(1), false);
+            }
+            else if (zoneInvocation[1])
+            {
+                lureCard.transform.SetParent(subBoard.transform.GetChild(2), false);
+            }
+            else if (zoneInvocation[2])
+            {
+                lureCard.transform.SetParent(subBoard.transform.GetChild(3), false);
+            }
+            lureCard.SetActive(true);
+            CardPlaces();
+            cardController.IsIncreasePower = false;
         }
-        else if (zoneInvocation[1])
-        {
-            lureCard.transform.SetParent(subBoard.transform.GetChild(2), false);
-        }
-        else if (zoneInvocation[2])
-        {
-            lureCard.transform.SetParent(subBoard.transform.GetChild(3), false);
-        }
-        lureCard.SetActive(true);
-        CardPlaces();
+
         Image imagePanel = panelFather.GetComponent<Image>();
         for (int i = 0; i < panelFather.transform.childCount; i++) 
         {

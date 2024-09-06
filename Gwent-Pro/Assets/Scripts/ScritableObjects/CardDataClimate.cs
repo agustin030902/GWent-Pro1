@@ -7,6 +7,13 @@ public class CardDataClimate : Card
 {
     [SerializeField] private bool[] afectationZone;
     [SerializeField] private int afectation;
+
+    public CardDataClimate(bool[] afectationZone, int afectation)
+    {
+        this.afectationZone = afectationZone;
+        this.afectation = afectation;
+    }
+
     //private bool isActivateClimate = false;
     public bool[] AfectationZone { get => afectationZone;}
     public int Afectation { get => afectation;}

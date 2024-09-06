@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ecf0566ac3edc94ba689f3601a738e0, type: 3}
   m_Name: Nevada Info (Pokemon)
   m_EditorClassIdentifier: 
-  name: Dia Soleado
+  name: Nevada
   typeCard: climate
   afectationZone: 000001
   afectation: -2

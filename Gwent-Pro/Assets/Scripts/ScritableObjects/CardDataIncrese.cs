@@ -9,7 +9,12 @@ public class CardDataIncrease : Card
     //[SerializeField] private bool[] invocationZone; //para saber donde esta invocada
     [SerializeField] private int increase;
 
-   // public  string Name { get => name; }
+    public CardDataIncrease(int increase)
+    {
+        this.increase = increase;
+    }
+
+    //public  string Name { get => name; }
     //public bool[] InvocationZone { get => invocationZone;}
     public int Increase { get => increase;}
 }

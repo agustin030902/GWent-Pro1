@@ -21,7 +21,7 @@ public class CardController : MonoBehaviour
     public bool IsIncreasePower { get => isIncreasePower; set => isIncreasePower = value; }
     public bool IsSaveLeader { get => isSaveLeader; set => isSaveLeader = value; }
 
-    private void Awake()
+    private void Start()
     {
         GameObject panelTwoCards = GameObject.Find("TwoCardsReturnPanel");
         if (panelTwoCards != null)
@@ -31,7 +31,6 @@ public class CardController : MonoBehaviour
         }
         panelInfoCardHand = GameObject.Find("InfoCardHand");
         panelInfoCardField = GameObject.Find("InfoCardField");
-        //buttonInvoke = panelInfoCardHand.transform.GetChild(1).gameObject;
         imagePanelHand = panelInfoCardHand.GetComponent<Image>();
         imagePanelField = panelInfoCardField.GetComponent<Image>();
         imageCardInPanel = panelInfoCardField.transform.GetChild(1).gameObject.GetComponent<Image>();
@@ -105,7 +104,6 @@ public class CardController : MonoBehaviour
                 CardDataUnit dataUnit = (CardDataUnit)controller.infoCard;
                 for (int j=0;j<3;j++)
                 {
-                    //print((dataUnit.DropZone[j] == climate.AfectationZone[j] && dataUnit.DropZone[j] == true) + " "+j);
                     if ((dataUnit.DropZone[j] == climate.AfectationZone[j] && dataUnit.DropZone[j] == true) && dataUnit.Type != "hero" && !dataUnit.ClimateModificatePower)
                     {
                         dataUnit.ClimateModificatePower = true;
@@ -119,28 +117,25 @@ public class CardController : MonoBehaviour
     }
     public void SummonCard()
     {
-        if (gameObject.transform.parent.name == "Player2 Hand" || gameObject.transform.parent.name == "Player1 Hand")
+        if (transform.parent.name == "Player2 Hand" || transform.parent.name == "Player1 Hand")
         {
             imagePanelHand.enabled = true;
-            gameObject.transform.SetParent(panelInfoCardHand.transform, false);
+            transform.SetParent(panelInfoCardHand.transform, false);
             gameObject.SetActive(false);
-            for (int i = 0; i < panelInfoCardHand.transform.childCount-1; i++) 
+            for (int i = 0; i < panelInfoCardHand.transform.childCount-1; i++)
             {
                 panelInfoCardHand.transform.GetChild(i).gameObject.SetActive(true);
             }
-            if (infoCard is CardDataUnit)
+            if (infoCard is CardDataUnit unit)
             {
-                CardDataUnit unit = (CardDataUnit)infoCard;
                 unit.Power = unit.OriginPower;
             }
-            
-
 
         }
     }
     public void InfoCard()
     {
-        if (transform.parent.gameObject.transform.parent.gameObject.transform.parent.name == "Board" && transform.parent.gameObject.name != "Cemetery" || transform.parent.name =="ClimateZone" )
+        if (transform.parent.parent.parent.name == "Board" && transform.parent.name != "Cemetery" || transform.parent.name =="ClimateZone" )
         {
             MonoBehaviour effect = GetComponent<MonoBehaviour>();
             if (effect is not Image)
@@ -178,7 +173,7 @@ public class CardController : MonoBehaviour
         }
         else if(transform.parent.name == "SelectionZone")
         {
-            transform.SetParent(GameObject.Find("SustitutionZone").transform,false);       
+            transform.SetParent(GameObject.Find("SustitutionZone").transform,false);
         }
     }
 

@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu (fileName ="Leader Info",menuName ="Card Data Leader")]
-public class CardDataLeader :Card
+public class CardDataLeader : Card
 {
+    [SerializeField] internal string Faction { get; set; }
+
     [SerializeField] private bool isActivateEffects = false;
+
+    public CardDataLeader(string faction)
+    {
+        Faction = faction;
+    }
+
     public bool IsActivateEffects { get => isActivateEffects;  set => isActivateEffects = value; }
     public void Effect(GameObject subBoard)
     {

@@ -5,7 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Gwent_Game;
 public class GameController : MonoBehaviour
 {
     public GameObject SubBoard;
@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
     public List<GameObject> Deck2;
     public GameObject leaderPlayer1;
     public GameObject leaderPlayer2;
+    //public DataBase dataBase;
     private GameObject panelRoundFinish;
     private GameObject textPanel;
     private GameObject leaderCardPlayer1;
@@ -59,6 +60,10 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        //int iw = DataBaseScript.data.DataBase.List.Count;
+        //print(iw);
+        //print(DataBaseScript.data.DataBase.List[0]);
+
         playerVictory = new int[3];
         table = GameObject.Find("Table");
         GameObject board = GameObject.Find("Board");
@@ -82,11 +87,13 @@ public class GameController : MonoBehaviour
 
 
         AudioSource[] audioSources = GetComponents<AudioSource>(); 
-        audioSourcePlayer1 = audioSources[0];   
+        audioSourcePlayer1 = audioSources[0];
         audioSourcePlayer2 = audioSources[1];
 
         Player1 = new(subBoardPlayer1,Deck1,player1Hand);
         Player2 = new(subBoardPlayer2,Deck2,player2Hand);
+        Player1.IdPlayer = 1;
+        Player2.IdPlayer = 2;
 
         Player1.Initialize();
         InvokeRepeating(nameof(ActivateMethodDrawInitial1), 0.45f, 0.3f);
@@ -97,6 +104,12 @@ public class GameController : MonoBehaviour
         for(int i = 0; i < 10; i++)
         {
             player2.Draw();
+        }
+
+        for(int i = 0;i < Player2.GetInfoCards("hand").Count; i++)
+        {
+            //print(Player2.GetInfoCards("hand")[i].Name);
+            //print(Player2.GetInfoCards("hand")[i].Name +": "+ Player2.GetInfoCards("hand")[i].Power);
         }
 
     }
@@ -179,7 +192,10 @@ public class GameController : MonoBehaviour
         {
             HideHand(Player2);
             ViewHand(Player1);
-            if(initializePlayer1)
+            
+
+
+            if (initializePlayer1)
             {
                 for (int i = 0; i < CardsSelected; i++)
                 {
@@ -231,28 +247,10 @@ public class GameController : MonoBehaviour
     private void HideHand(Player player)
     {
         player.HandPlayer.SetActive(false);
-        //int cardCount = player.HandPlayer.transform.childCount;
-        //for (int i = 0; i < cardCount; i++)
-        //{
-        //    player.HandPlayer.transform.GetChild(i).gameObject.SetActive(false);
-        //    Instantiate(CardBlack, player.HandPlayer.transform);
-        //}
-
     }
     private void ViewHand(Player player)
     {
         player.HandPlayer.SetActive(true);
-        //int cardCount = player.HandPlayer.transform.childCount/2;
-        //for(int i = 0; i< player.HandPlayer.transform.childCount; i++) 
-        //{
-        //    if (player.HandPlayer.transform.childCount > cardCount)
-        //    {
-        //        Destroy(player.HandPlayer.transform.GetChild(player.HandPlayer.transform.childCount - 1).gameObject);
-        //    }
-        //    player.HandPlayer.transform.GetChild(i).gameObject.SetActive(false);
-
-        //}
-
     }
     private void InitializePlayer2()
     {
@@ -280,9 +278,8 @@ public class GameController : MonoBehaviour
             {
                 GameObject card = player.SubBoard.transform.GetChild(j).GetChild(i).gameObject;
                 cardController = card.GetComponent<CardController>();
-                if(cardController.infoCard is CardDataUnit)
+                if (cardController.infoCard is CardDataUnit unit)
                 {
-                    CardDataUnit unit = (CardDataUnit)cardController.infoCard;
                     sum += unit.Power;
                 }
             }
@@ -314,16 +311,19 @@ public class GameController : MonoBehaviour
                 cardController = card.GetComponent<CardController>();
                 if(!cardController.IsSaveLeader)
                 {
-                    //MonoBehaviour effectCard = card.GetComponent<MonoBehaviour>();
+                    MonoBehaviour effectCard = card.GetComponent<MonoBehaviour>();
                     //GameObject cardInCemetery = Instantiate(card, new Vector2(0, 0), Quaternion.identity);
                     //cardInCemetery.transform.SetParent(player.SubBoard.transform.GetChild(7), false);
-                    Destroy(card);
+                    card.transform.SetParent(player.SubBoard.transform.GetChild(7), false);
+                    card.SetActive(false);
                     //cardController = cardInCemetery.GetComponent<CardController>();
                     //cardController.enabled = false;
-                    //if (effectCard is not Image)
-                    //{
-                    //    effectCard.enabled = false;
-                    //}
+                    if (effectCard is not Image)
+                    {
+                        effectCard.enabled = false;
+                    }
+                    //Destroy(card);
+
                 }
                 else if(cardController.IsSaveLeader)
                 {

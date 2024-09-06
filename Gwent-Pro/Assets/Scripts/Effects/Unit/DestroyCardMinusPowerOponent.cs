@@ -35,7 +35,12 @@ public class DestroyCardMinusPowerOponent : MonoBehaviour
             {
                 GameObject card = subBoard.transform.GetChild(i).GetChild(j).gameObject;
                 cardController = card.GetComponent<CardController>();
-                if (cardController.infoCard is CardDataUnit)
+                if(cardController.infoCard is CardDataLure)
+                {
+                    cardResult = card;
+                    return cardResult;
+                }
+                else if (cardController.infoCard is CardDataUnit)
                 {
                     CardDataUnit dataUnit = (CardDataUnit)cardController.infoCard;
                     if(dataUnit.Power < temp)
